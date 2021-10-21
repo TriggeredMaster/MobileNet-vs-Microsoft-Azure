@@ -1,0 +1,241 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h3 class="btn btn-primary heading">Case Study Between MobileNet and Microsoft Azure -
+  </h3>
+  <br><br>
+  
+<ol>
+  <!-- 1st Image Code Start -->
+  <div class="test_image_and_result col-xs-12">
+    <li class="col sm-4 col-xs-12">
+      <b>Test Image -</b>
+      <img src="Speakers.jpg" style="width: 10%;" class="img-responsive img">
+    </li>
+
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b>Microsoft Azure -</b>
+      <span>A Close Up of a Speaker</span>
+    </h5>
+
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b>MobileNet -</b>
+      <span>Speaker</span>
+    </h5>
+
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - Both Are <b>Equally Accurate.</b></h4>
+      <hr>
+      <h4></h4>
+    </div>
+  </div>
+  <br>
+  <!-- 1st Img Code End -->
+
+    <!-- 2nd Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="Car.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>A Blue Car</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Sports Car</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Both are <b>Equally Accurate.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 2nd Img Code End -->
+
+      <!-- 3rd Image Code Start -->
+  <div class="test_image_and_result col-xs-12">
+    <li class="col sm-4 col-xs-12">
+      <b>Test Image -</b>
+      <img src="Keyboard.jpg" style="width: 10%;" class="img-responsive img">
+    </li>
+
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b>Microsoft Azure -</b>
+      <span>A Close Up of a Computer Keyboard</span>
+    </h5>
+
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b>MobileNet -</b>
+      <span>Computer Keyboard</span>
+    </h5>
+
+    <div class="mini_result" class="col-xs-12">
+      <h4>Result - Both Are <b>Equally Accurate.</b></h4>
+      <hr>
+      <h4></h4>
+    </div>
+  </div>
+  <br>
+  <!-- 3rd Img Code End -->
+
+    <!-- 4th Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="Mobile.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>Undefined</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Cell Phone</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - MobileNet is <b>More Accurate.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 4th Img Code End -->
+
+    <!-- 5th Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="Mouse.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>A Mouse</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Computer Mouse</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Both Are <b>Equally Accurate.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 5th Img Code End -->
+
+    <!-- 6th Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="Notebook.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>Background Pattern</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Monitor</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Both are <b>Equally Wrong.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 6th Img Code End -->
+
+    <!-- 7th Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="Pen.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>A Close Up of a Pen</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Ball Point Pen</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - Both are <b>Equally Accurate.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 7th Img Code End -->
+
+    <!-- 8th Image Code Start -->
+    <div class="test_image_and_result col-xs-12">
+      <li class="col sm-4 col-xs-12">
+        <b>Test Image -</b>
+        <img src="PencilBox.jpg" style="width: 10%;" class="img-responsive img">
+      </li>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Microsoft Azure -</b>
+        <span>A Close Up of a Bag</span>
+      </h5>
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>MobileNet -</b>
+        <span>Pencil Case</span>
+      </h5>
+  
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result - MobileNet is <b>More Accurate.</b></h4>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <br>
+    <!-- 8th Img Code End -->
+</ol>  
+
+<center>
+<div class="conclusion">
+<h3>In this test, MobileNet has scored 7 Points out of 8 and Microsoft Azure has scored 5 Points out of 8.</h3>
+<h3>So, MobileNet has won the test and is more accurate.</h3>
+</div>
+</center>
+<script src="main.js"></script>
+</body> 
+
+</html>
+
+
